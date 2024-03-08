@@ -6,7 +6,7 @@
     font-family: 'Roboto', sans-serif;
   }
   
-  .form{
+  body{
     background-image: url(../public/bg4.png);
     background-size: cover;
     background-repeat: no-repeat;

@@ -1,0 +1,167 @@
+/* Estilos generales */
+
+/* Resetear márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para el body */
+  .home {
+    font-family: Arial, sans-serif; /* Establecer una fuente legible */
+    background-image: url(./public/gris.jpg);
+    background-color: darkgray; /* Color de fondo para la página */
+    color: #333; /* Color de texto predeterminado */
+    line-height: 1.6; /* Altura de línea para una mejor legibilidad */
+  }
+  
+  /* Estilo para el contenido principal */
+  .contenedor {
+    max-width: 800px; /* Ancho máximo del contenedor principal */
+    margin: 0 auto; /* Centrar el contenedor en la página */
+    background-color: #fff; /* Color de fondo del contenedor */
+    padding: 20px; /* Espaciado interno dentro del contenedor */
+    margin-top: 20px; /* Espacio superior */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  .contenedor h2 {
+    margin-bottom: 10px; /* Espaciado inferior para los títulos */
+  }
+  
+  button.salto {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    background-color:#464444
+  }
+  
+  .salto:hover {
+    transform: translateY(-5px);
+    background-color: #333;
+  }
+  
+  /* Estilo para el enlace que envuelve al contenedor del juego */
+  .enlace-juego {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #333;
+  }
+  
+  /* Estilos para el hero */
+  .hero {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+    align-items: center;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../public/introduction-javascript-cover.webp');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 100%, 0 100%);
+    z-index: -1;
+  }
+  
+  /* Estilos para el footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .links ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .links ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .links ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilos para el texto animado */
+  #animation-container {
+    text-align: center;
+    margin-top: 100px; /* Ajusta el margen superior según sea necesario */
+  }
+  
+  .animated-hero {
+    animation-name: moveDown;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; /* Mantiene la última posición de la animación */
+  }
+  
+  /* Definición de la animación */
+  @keyframes moveDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Estilos para los botones */
+  .contenedor-botones {
+    text-align: center; /* Centrar horizontalmente */
+    margin-top: 20px; /* Espacio superior */
+    color: #333;
+  }
+  
+  /* Estilo para el botón */
+  button {
+    border: none;
+    outline: none;
+    background: #ffffff; /* Color de fondo */
+    color: rgb(0, 0, 0); /* Color de texto */
+    padding: 15px 30px; /* Espaciado interno */
+    font-size: 20px; /* Tamaño de fuente */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background 0.3s ease; /* Transición suave */
+  }
+  
+  button:hover {
+    background: #ebe8e8; /* Cambio de color al pasar el cursor */
+  }
+  

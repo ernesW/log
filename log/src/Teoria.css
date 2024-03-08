@@ -1,0 +1,65 @@
+.teoria {
+    font-family: Arial, sans-serif;
+    background-color: #292929; 
+    margin: 0;
+    padding: 0;
+    color: #fff; 
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #424242; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
+    max-width: 600px;
+    
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Estilos para los botones */
+  .contenedor-botones {
+    text-align: center; /* Centrar horizontalmente */
+    margin-top: 20px; /* Espacio superior */
+    color: #333;
+  }
+  
+  /* Estilo para el botón */
+  button {
+    border: none;
+    outline: none;
+    background: #565454; /* Color de fondo */
+    color: rgb(0, 0, 0); /* Color de texto */
+    padding: 15px 30px; /* Espaciado interno */
+    font-size: 20px; /* Tamaño de fuente */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background 0.3s ease; /* Transición suave */
+  }
+  
+  button:hover {
+    background: #ebe8e8; /* Cambio de color al pasar el cursor */
+  }
